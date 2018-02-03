@@ -3,14 +3,14 @@ let index = 0;
 
 function init(){
 document.body.addEventListener('keydown', function(event) {
-  event.which;
+  event.which || e.detail;
   kcdetector(event);
   }
   );
 }
 
 function kcdetector(event) {
-  const keypressed = parseInt(event.which);
+  const keypressed = parseInt(event.which || e.detail);
   if (keypressed === konamicode[index]) {
     index++;
     if (index === konamicode.length) {

@@ -10,7 +10,7 @@ document.body.addEventListener('keydown', function(event) {
 }
 
 function kcdetector(event) {
-  const keypressed = parseInt(event.which || e.detail);
+  const keypressed = parseInt(event.detail || event.which);
   if (keypressed === konamicode[index]) {
     index++;
     if (index === konamicode.length) {

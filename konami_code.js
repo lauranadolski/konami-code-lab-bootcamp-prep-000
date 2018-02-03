@@ -3,7 +3,7 @@ let index = 0;
 
 function init(){
 document.body.addEventListener('keydown', function(event) {
-  event.which || e.detail;
+  (event.detail || event.which);
   kcdetector(event);
   }
   );

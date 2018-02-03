@@ -5,9 +5,6 @@ function init(){
 document.body.addEventListener('keydown', function(event) {
   event.which;
   kcdetector(event);
-  // console.log("This is what edetail produces" + event.detail);
-  // console.log("This is what ewhich produces" + event.which);
-  // console.log("This is what elocation produces" + event.location);
   }
   );
 }
